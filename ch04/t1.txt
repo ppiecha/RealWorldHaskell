@@ -1,2 +1,2 @@
-first sentence
-second sentence
+hello
+world

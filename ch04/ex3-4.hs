@@ -3,6 +3,9 @@ import System.Environment (getArgs)
 firstWords :: String -> String
 firstWords str = (unlines . (map head) . (map words) . lines) str
 
+myTranspose :: String -> String
+myTranspose = unlines . transpose . lines
+
 interactWith function inputFile outputFile = do
   input <- readFile inputFile
   writeFile outputFile (function input)
